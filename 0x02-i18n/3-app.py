@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
-"""A simple flask app
+"""A basic flask app
 """
-
-
 from flask import Flask, render_template, request
 from flask_babel import Babel
 
@@ -18,7 +16,6 @@ class Config(object):
     BABEL_DEFAULT_TIMEZONE = 'UTC'
 
 
-# configure the flask app
 app = Flask(__name__)
 app.config.from_object(Config)
 app.url_map.strict_slashes = False
